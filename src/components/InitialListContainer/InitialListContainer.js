@@ -18,7 +18,7 @@ export const InitialListContainer = () => {
 
             getPrices(setList)
 
-        }, 10000)
+        }, 30000)
 
     }, [])
     

@@ -13,6 +13,7 @@ export const InitialListContainer = () => {
     
     useEffect(() => {
         
+        getPrices(setList)
         setInterval( () => {
 
             getPrices(setList)

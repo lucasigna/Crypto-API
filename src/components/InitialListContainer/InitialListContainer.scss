@@ -4,33 +4,59 @@ main{
     display: flex;
     justify-content: center;
     .containerList{
-        width: 80vw;
-        height: 500px;
-        background-color: $colorFondoNegro10;
         border-radius: 40px;
         margin-bottom: 50px;
-        .headerList{
-            display: flex;
-            justify-content: space-around;
-            padding: 30px 20px;
-            p{
-                font-size: 18px;
-                font-weight: 700;
+        padding: 30px;
+        display: grid;
+        grid-template-columns: 1fr 0.8fr 0.8fr 1.5fr 1fr;
+        &.light{
+            background-color: $colorFondoNegro10;
+        }
+        &.dark{
+            background-color: $colorFondoBlanco10;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 500;
+            color: $colorFondoNegro;
+            text-align: start;
+            font-style: italic;
+            padding: 20px 0;
+            &.light{
                 color: $colorFondoNegro;
-                text-align: center;
+            }
+            &.dark{
+                color: $colorFondoBlanco;
             }
         }
-        .itemList{
-            display: flex;
-            justify-content: space-between;
-            padding: 20px 60px;
-            p{
-                font-size: 16px;
-                font-weight: 500;
-                color: $colorFondoNegro;
-                text-align: center;
-                font-style: italic;
+        .green{
+            color: $colorVerde;
+        }
+        .red{
+            color: $colorRojo;
+        }
+        .head{
+            font-size: 18px;
+            font-weight: 700;
+            vertical-align: middle;
+            font-style: normal;
+            padding: 10px 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    main{
+        .containerList{
+            grid-template-columns: 1fr 1fr 1fr;
+            p,.head{
+                font-size: 14px;
             }
         }
     }
+    .columnNotDisplay{
+      display: none;
+    }
+  
 }

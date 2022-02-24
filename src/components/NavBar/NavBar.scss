@@ -2,7 +2,9 @@
 
 header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     h1{
         color: $colorFondoNegro;
         margin: 50px auto;
@@ -29,6 +31,37 @@ header {
     }
     &.dark{
         background-color: $colorFondoNegro;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        ul{
+            width: 80vw;
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            .navLink{
+                text-decoration: none;
+                margin: 10px 20px;
+                li{
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    width: 15vw;
+                    text-align: center;
+                    &.light{
+                        color: $colorFondoNegro;
+                        background-color: $colorFondoNegro10;
+                    }
+                    &.dark{
+                        color: $colorFondoBlanco;
+                        background-color: $colorFondoBlanco10;
+                    }
+                }
+            }
+        }
     }
 }
 

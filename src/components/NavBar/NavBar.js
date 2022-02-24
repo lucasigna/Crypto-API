@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { ThemeContext } from '../../context/ThemeContext';
 import { DarkLightMode } from './DarkLightMode';
+import { Menu } from './Menu';
 import './NavBar.scss';
 
 export const NavBar = () => {
@@ -11,6 +12,7 @@ export const NavBar = () => {
         <header className={theme ? 'light' : 'dark'}>
             <h1 className={theme ? 'light' : 'dark'}>Crypto API</h1>
             <DarkLightMode/>
+            <Menu/>
         </header>
     )
 }

@@ -6,3 +6,11 @@ export const giveFormatToNumbers = (num) => {
     return str.join(".");
 
 }
+
+export const trendCoins = [
+    'bitcoin',
+    'ethereum',
+    'dai',
+    'solana',
+    'tether'
+]

@@ -42,6 +42,17 @@ main{
             font-style: normal;
             padding: 10px 0;
         }
+        .nameAndThumb{
+            display: flex;
+            align-items: center;
+            img{
+                height: 25px;
+                margin-right: 10px;
+            }
+            .skeletonIcon{
+                margin-right: 10px;
+            }
+        }
     }
 }
 

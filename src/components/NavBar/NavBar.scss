@@ -40,16 +40,26 @@ header {
             width: 80vw;
             display: flex;
             list-style: none;
-            justify-content: space-between;
-            li{
-                background-color: $colorFondoNegro10;
-                padding: 10px 20px;
-                border-radius: 10px;
+            justify-content: center;
+            .navLink{
+                text-decoration: none;
                 margin: 10px 20px;
-                font-size: 20px;
-                font-weight: 500;
-                width: 15vw;
-                text-align: center;
+                li{
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    width: 15vw;
+                    text-align: center;
+                    &.light{
+                        color: $colorFondoNegro;
+                        background-color: $colorFondoNegro10;
+                    }
+                    &.dark{
+                        color: $colorFondoBlanco;
+                        background-color: $colorFondoBlanco10;
+                    }
+                }
             }
         }
     }

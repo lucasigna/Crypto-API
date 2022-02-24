@@ -1,0 +1,23 @@
+@import '../../assets/_variables.scss';
+
+main{
+    display: flex;
+    justify-content: center;
+    .containerChart{
+        border-radius: 40px;
+        margin-bottom: 50px;
+        padding: 30px;
+        &.light{
+            background-color: $colorFondoNegro10;
+        }
+        &.dark{
+            background-color: $colorFondoBlanco10;
+        }
+        .chartBox{
+            background-color: $colorFondoBlanco;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            padding: 30px;
+        }
+    }
+}

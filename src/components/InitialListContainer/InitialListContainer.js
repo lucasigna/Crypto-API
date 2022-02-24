@@ -14,11 +14,11 @@ export const InitialListContainer = () => {
     useEffect(() => {
         
         getPrices(setList)
-        setInterval( () => {
+        /* setInterval( () => {
 
             getPrices(setList)
 
-        }, 30000)
+        }, 30000) */
 
     }, [])
     

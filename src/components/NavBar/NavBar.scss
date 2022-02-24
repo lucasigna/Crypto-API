@@ -48,17 +48,32 @@ header {
                     padding: 10px 20px;
                     border-radius: 10px;
                     font-size: 20px;
-                    font-weight: 500;
+                    font-weight: 300;
                     width: 15vw;
                     text-align: center;
+                    opacity: 0.8;
+                    border: 1px solid transparent;
+                    transition: all 0.2s;
                     &.light{
                         color: $colorFondoNegro;
                         background-color: $colorFondoNegro10;
+                        &:hover{
+                            opacity: 1.0;
+                            border: 0.5px solid $colorFondoNegro;
+                        }
                     }
                     &.dark{
                         color: $colorFondoBlanco;
                         background-color: $colorFondoBlanco10;
+                        &:hover{
+                            opacity: 1.0;
+                            border: 0.5px solid $colorFondoBlanco;
+                        }
                     }
+                }
+                #actualTab{
+                    font-weight: 700;
+                    opacity: 1.0;
                 }
             }
         }
@@ -118,4 +133,20 @@ input:checked + .sliderMode:before {
     -webkit-transform: translateX(28px);
     -ms-transform: translateX(28px);
     transform: translateX(17px);
+}
+
+@media only screen and (max-width: 700px) {
+
+    header{
+        nav{
+            ul{
+                .navLink{
+                    li{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
 }

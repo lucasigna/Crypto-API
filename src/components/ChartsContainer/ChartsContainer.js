@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { ThemeContext } from '../../context/ThemeContext'
 import { Chart } from './Chart';
 import { ChartHeader } from './ChartHeader';

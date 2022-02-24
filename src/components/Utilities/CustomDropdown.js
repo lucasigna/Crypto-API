@@ -63,6 +63,10 @@ const StyledButton = styled('button')(
             content: '▾';
             float: right;
         }
+        @media only screen and (max-width: 700px) {
+            margin: 0;
+            margin-bottom: 10px;
+        }
     `,
 );
 

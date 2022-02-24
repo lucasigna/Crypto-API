@@ -11,6 +11,7 @@ export const ChartProvider = ({children}) => {
 
     //Función para cambiar la data
     const changeData = (data) => {
+        //console.log(data);
         setChartData(data)
     }
 

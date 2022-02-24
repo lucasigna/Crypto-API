@@ -21,3 +21,24 @@ main{
         }
     }
 }
+
+@media only screen and (max-width: 700px) {
+
+    main{
+        .containerChart{
+            width: 100vw;
+            padding: 20px;
+            .chartHeader{
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .chartBox{
+                padding: 0;
+                overflow: hidden;
+            }
+        }
+        
+    }
+
+}

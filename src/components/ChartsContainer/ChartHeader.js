@@ -58,8 +58,8 @@ export const ChartHeader = () => {
     const {changeCoin,changeTime} = useContext(ChartContext)
 
     return (
-        <div>
-            <CustomDropdown onChange={changeCoin} selected="bitcoin" options={coins}/>
+        <div className="chartHeader">
+            <CustomDropdown className="drop" onChange={changeCoin} selected="bitcoin" options={coins}/>
             <CustomDropdown onChange={changeTime} selected="7days" options={timeOptions}/>
         </div>
     )
